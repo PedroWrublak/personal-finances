@@ -45,8 +45,8 @@ export default function Sidebar() {
       {/* Desktop sidebar */}
       <aside className="hidden md:flex flex-col w-52 min-h-screen bg-white border-r border-gray-100 px-3 py-6 shrink-0">
         <div className="px-3 mb-8">
-          <span className="text-sm font-medium text-gray-900">Finanças</span>
-          <span className="text-sm text-emerald-600 font-medium"> pessoais</span>
+          <span className="text-sm text-emerald-600 font-medium">FinCora</span>
+          <span className="text-sm font-medium text-gray-900"> Finanças</span>
         </div>
         <nav className="flex flex-col gap-1">
           {links.map(({ href, label, icon }) => {

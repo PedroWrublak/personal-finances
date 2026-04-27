@@ -1,6 +1,6 @@
 "use client";
 
-import { useFinanceStore } from "@/Store/finance";
+import { useFinanceStore } from "@/store/finance";
 import { useState } from "react";
 
 const fmt = (value: number) =>

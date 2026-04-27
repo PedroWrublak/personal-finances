@@ -7,21 +7,31 @@ export interface BudgetItem {
   limit: number;
 }
 
+export interface SavingsGoal {
+  id: string;
+  name: string;
+  target: number;
+}
+
 export interface Transaction {
   id: string;
   categoryId: string;
   amount: number;
   date: string;
   note?: string;
-  type: "income" | "expense";
+  type: "income" | "expense" | "savings";
 }
 
 interface FinanceStore {
   budgets: BudgetItem[];
+  savingsGoals: SavingsGoal[];
   transactions: Transaction[];
   addBudget: (item: Omit<BudgetItem, "id">) => void;
   updateBudget: (id: string, item: Omit<BudgetItem, "id">) => void;
   deleteBudget: (id: string) => void;
+  addSavingsGoal: (goal: Omit<SavingsGoal, "id">) => void;
+  updateSavingsGoal: (id: string, goal: Omit<SavingsGoal, "id">) => void;
+  deleteSavingsGoal: (id: string) => void;
   addTransaction: (t: Omit<Transaction, "id">) => void;
   deleteTransaction: (id: string) => void;
 }
@@ -36,7 +46,9 @@ export const useFinanceStore = create<FinanceStore>()(
         { id: "4", name: "Moradia",     limit: 1800 },
         { id: "5", name: "Saúde",       limit: 300  },
       ],
+      savingsGoals: [],
       transactions: [],
+
       addBudget: (item) =>
         set((s) => ({
           budgets: [...s.budgets, { ...item, id: Date.now().toString() }],
@@ -50,12 +62,24 @@ export const useFinanceStore = create<FinanceStore>()(
           budgets: s.budgets.filter((b) => b.id !== id),
           transactions: s.transactions.filter((t) => t.categoryId !== id),
         })),
+
+      addSavingsGoal: (goal) =>
+        set((s) => ({
+          savingsGoals: [...s.savingsGoals, { ...goal, id: Date.now().toString() }],
+        })),
+      updateSavingsGoal: (id, goal) =>
+        set((s) => ({
+          savingsGoals: s.savingsGoals.map((g) => (g.id === id ? { ...g, ...goal } : g)),
+        })),
+      deleteSavingsGoal: (id) =>
+        set((s) => ({
+          savingsGoals: s.savingsGoals.filter((g) => g.id !== id),
+          transactions: s.transactions.filter((t) => t.categoryId !== id),
+        })),
+
       addTransaction: (t) =>
         set((s) => ({
-          transactions: [
-            { ...t, id: Date.now().toString() },
-            ...s.transactions,
-          ],
+          transactions: [{ ...t, id: Date.now().toString() }, ...s.transactions],
         })),
       deleteTransaction: (id) =>
         set((s) => ({

@@ -3,7 +3,7 @@ import "./globals.css";
 import Sidebar from "@/components/Sidebar";
 
 export const metadata: Metadata = {
-  title: "Finanças Pessoais",
+  title: "FinSimple",
   description: "Controle suas finanças pessoais",
 };
 

@@ -12,7 +12,7 @@ import {
 } from "recharts";
 
 import { useMemo } from "react";
-import { useFinanceStore } from "@/Store/finance";
+import { useFinanceStore } from "@/store/finance";
 
 const fmt = (value: number) =>
   value.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });

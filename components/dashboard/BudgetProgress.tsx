@@ -1,6 +1,6 @@
 "use client";
 
-import { useFinanceStore } from "@/Store/finance";
+import { useFinanceStore } from "@/store/finance";
 import { useMemo } from "react";
 
 const fmt = (value: number) =>
@@ -8,30 +8,23 @@ const fmt = (value: number) =>
 
 function getBarColor(pct: number) {
   if (pct >= 100) return "bg-red-500";
-  if (pct >= 90) return "bg-amber-400";
+  if (pct >= 90)  return "bg-amber-400";
   return "bg-emerald-500";
 }
 
 function getTextColor(pct: number) {
   if (pct >= 100) return "text-red-600";
-  if (pct >= 90) return "text-amber-600";
+  if (pct >= 90)  return "text-amber-600";
   return "text-gray-500";
 }
 
 export default function BudgetProgress() {
-  const budgets = useFinanceStore((s) => s.budgets);
+  const budgets      = useFinanceStore((s) => s.budgets);
   const transactions = useFinanceStore((s) => s.transactions);
 
-  const now = new Date();
+  const now   = new Date();
   const start = new Date(now.getFullYear(), now.getMonth(), 1).toISOString();
-  const end = new Date(
-    now.getFullYear(),
-    now.getMonth() + 1,
-    0,
-    23,
-    59,
-    59,
-  ).toISOString();
+  const end   = new Date(now.getFullYear(), now.getMonth() + 1, 0, 23, 59, 59).toISOString();
 
   const spentByCategory = useMemo(() => {
     const map: Record<string, number> = {};
@@ -66,8 +59,8 @@ export default function BudgetProgress() {
       <div className="flex flex-col gap-4">
         {budgets.map((budget) => {
           const spent = spentByCategory[budget.id] ?? 0;
-          const pct = Math.min((spent / budget.limit) * 100, 100);
-          const over = spent > budget.limit;
+          const pct   = Math.min((spent / budget.limit) * 100, 100);
+          const over  = spent > budget.limit;
 
           return (
             <div key={budget.id}>
