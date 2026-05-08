@@ -1,36 +1,133 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 💸 Personal Finances
 
-## Getting Started
+Um sistema moderno para gerenciamento de finanças pessoais, desenvolvido com foco em performance, organização e experiência do usuário.
 
-First, run the development server:
+## 🚀 Tecnologias
+
+Este projeto foi desenvolvido utilizando:
+
+- ⚛️ React
+- ▲ Next.js
+- 🟦 TypeScript
+- 🎨 Tailwind CSS
+- 🗃️ Zustand
+- 📊 Dashboard interativo
+- 🔐 Arquitetura moderna Frontend
+
+---
+
+## ✨ Funcionalidades
+
+- 📈 Dashboard financeiro
+- 💰 Controle de receitas e despesas
+- 📊 Visualização de saldo total
+- 🗂️ Organização de transações
+- 📱 Interface responsiva
+- ⚡ Gerenciamento de estado otimizado
+- 🎨 UI moderna e intuitiva
+
+---
+
+## 🛠️ Como rodar o projeto
+
+Clone o repositório:
+
+```bash
+git clone https://github.com/PedroWrublak/personal-finances.git
+```
+
+Acesse a pasta do projeto:
+
+```bash
+cd personal-finances
+```
+
+Instale as dependências:
+
+```bash
+npm install
+```
+
+Execute o projeto:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+O projeto estará disponível em:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 📂 Estrutura do Projeto
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+src/
+ ├── app/
+ ├── components/
+ ├── store/
+ ├── hooks/
+ ├── utils/
+ └── styles/
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🎯 Objetivo
 
-## Deploy on Vercel
+Este projeto foi criado para praticar e evoluir conhecimentos em desenvolvimento frontend moderno utilizando React, Next.js e TypeScript, além de explorar conceitos de gerenciamento financeiro e experiência do usuário.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📚 Aprendizados
+
+Durante o desenvolvimento foram trabalhados conceitos como:
+
+- Componentização
+- Gerenciamento de estado global
+- Tipagem com TypeScript
+- Responsividade
+- Organização de projeto escalável
+- Boas práticas com Next.js
+
+---
+
+## 🤝 Contribuições
+
+Contribuições são sempre bem-vindas.
+
+Para contribuir:
+
+1. Faça um fork do projeto
+2. Crie uma branch:
+
+```bash
+git checkout -b minha-feature
+```
+
+3. Commit suas alterações:
+
+```bash
+git commit -m "feat: minha nova feature"
+```
+
+4. Push para a branch:
+
+```bash
+git push origin minha-feature
+```
+
+5. Abra um Pull Request
+
+---
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT.
+
+---
+
+Feito por [Pedro Wrublak](https://github.com/PedroWrublak)

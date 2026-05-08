@@ -9,10 +9,42 @@ const links = [
     label: "Visão geral",
     icon: (
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-        <rect x="1" y="1" width="6" height="6" rx="1.5" fill="currentColor" opacity=".9"/>
-        <rect x="9" y="1" width="6" height="6" rx="1.5" fill="currentColor" opacity=".9"/>
-        <rect x="1" y="9" width="6" height="6" rx="1.5" fill="currentColor" opacity=".9"/>
-        <rect x="9" y="9" width="6" height="6" rx="1.5" fill="currentColor" opacity=".9"/>
+        <rect
+          x="1"
+          y="1"
+          width="6"
+          height="6"
+          rx="1.5"
+          fill="currentColor"
+          opacity=".9"
+        />
+        <rect
+          x="9"
+          y="1"
+          width="6"
+          height="6"
+          rx="1.5"
+          fill="currentColor"
+          opacity=".9"
+        />
+        <rect
+          x="1"
+          y="9"
+          width="6"
+          height="6"
+          rx="1.5"
+          fill="currentColor"
+          opacity=".9"
+        />
+        <rect
+          x="9"
+          y="9"
+          width="6"
+          height="6"
+          rx="1.5"
+          fill="currentColor"
+          opacity=".9"
+        />
       </svg>
     ),
   },
@@ -21,7 +53,12 @@ const links = [
     label: "Transações",
     icon: (
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-        <path d="M2 5h12M2 8h8M2 11h5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+        <path
+          d="M2 5h12M2 8h8M2 11h5"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+        />
       </svg>
     ),
   },
@@ -30,8 +67,13 @@ const links = [
     label: "Orçamentos",
     icon: (
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-        <circle cx="8" cy="8" r="6.5" stroke="currentColor" strokeWidth="1.5"/>
-        <path d="M8 4.5v1M8 10.5v1M5.5 8h5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+        <circle cx="8" cy="8" r="6.5" stroke="currentColor" strokeWidth="1.5" />
+        <path
+          d="M8 4.5v1M8 10.5v1M5.5 8h5"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+        />
       </svg>
     ),
   },
@@ -40,8 +82,19 @@ const links = [
     label: "Poupança",
     icon: (
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-        <path d="M2 12 L8 4 L14 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-        <path d="M5 9h6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+        <circle cx="8" cy="8" r="5" stroke="currentColor" strokeWidth="1.5" />
+        <path
+          d="M8 5V11"
+          stroke="currentColor"
+          strokeWidth="1"
+          strokeLinecap="round"
+        />
+        <path
+          d="M6.5 6.5C6.5 5.8 7.1 5.5 8 5.5C8.9 5.5 9.5 5.9 9.5 6.5C9.5 7.1 9 7.4 8 7.6C7 7.8 6.5 8.1 6.5 8.8C6.5 9.5 7.1 10 8 10C8.9 10 9.5 9.7 9.5 9"
+          stroke="currentColor"
+          strokeWidth="1.2"
+          strokeLinecap="round"
+        />
       </svg>
     ),
   },
