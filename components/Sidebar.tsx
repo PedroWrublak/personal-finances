@@ -82,17 +82,16 @@ const links = [
     label: "Poupança",
     icon: (
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-        <circle cx="8" cy="8" r="5" stroke="currentColor" strokeWidth="1.5" />
         <path
-          d="M8 5V11"
+          d="M8 1.5V3M8 13V14.5"
           stroke="currentColor"
-          strokeWidth="1"
+          strokeWidth="1.5"
           strokeLinecap="round"
         />
         <path
-          d="M6.5 6.5C6.5 5.8 7.1 5.5 8 5.5C8.9 5.5 9.5 5.9 9.5 6.5C9.5 7.1 9 7.4 8 7.6C7 7.8 6.5 8.1 6.5 8.8C6.5 9.5 7.1 10 8 10C8.9 10 9.5 9.7 9.5 9"
+          d="M10.5 4.5C10.5 4.5 9.5 3.5 8 3.5C6.2 3.5 5 4.5 5 5.8C5 7.1 6 7.6 8 8C10 8.4 11 9 11 10.3C11 11.6 9.8 12.5 8 12.5C6.2 12.5 5 11.5 5 11.5"
           stroke="currentColor"
-          strokeWidth="1.2"
+          strokeWidth="1.5"
           strokeLinecap="round"
         />
       </svg>
