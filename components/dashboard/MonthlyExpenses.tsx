@@ -10,9 +10,8 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
-
-import { useMemo } from "react";
 import { useFinanceStore } from "@/store/finance";
+import { useMemo } from "react";
 
 const fmt = (value: number) =>
   value.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
@@ -90,7 +89,7 @@ export default function MonthlyExpenses() {
         Gastos por categoria
       </p>
       <div style={{ width: "100%", height: 220 }}>
-        <ResponsiveContainer width="100%" height="100%">
+        <ResponsiveContainer width="100%" height="100%" minWidth={0} minHeight={undefined}>
           <LineChart data={data}>
             <CartesianGrid
               strokeDasharray="3 3"

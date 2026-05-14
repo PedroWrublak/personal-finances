@@ -105,10 +105,10 @@ export default function Sidebar() {
   return (
     <>
       {/* Desktop sidebar */}
-      <aside className="hidden md:flex flex-col w-52 min-h-screen bg-white border-r border-gray-100 px-3 py-6 shrink-0">
+      <aside className="hidden md:flex flex-col w-52 min-h-screen bg-black border-r border-gray-100 px-3 py-6 shrink-0">
         <div className="px-3 mb-8">
           <span className="text-sm text-emerald-600 font-medium">FinCora</span>
-          <span className="text-sm font-medium text-gray-900"> Finanças</span>
+          <span className="text-sm font-medium text-white"> Finanças</span>
         </div>
         <nav className="flex flex-col gap-1">
           {links.map(({ href, label, icon }) => {
@@ -120,7 +120,7 @@ export default function Sidebar() {
                 className={`flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm transition-colors ${
                   active
                     ? "bg-gray-900 text-white"
-                    : "text-gray-500 hover:bg-gray-100 hover:text-gray-900"
+                    : "text-gray-500 hover:bg-gray-600 hover:text-gray-900"
                 }`}
               >
                 {icon}

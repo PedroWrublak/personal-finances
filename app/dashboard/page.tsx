@@ -6,7 +6,7 @@ import SavingsProgress from "@/components/dashboard/SavingsProgress";
 
 export default function DashboardPage() {
   return (
-    <main className="min-h-screen bg-gray-50 p-6 mx-auto">
+    <main className="min-h-screen bg-gray-12 p-6 mx-auto">
       <div className="mb-6">
         <h1 className="text-xl font-medium text-gray-900">Visão geral</h1>
         <p className="text-sm text-gray-400 mt-0.5">

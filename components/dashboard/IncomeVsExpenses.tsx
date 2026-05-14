@@ -45,7 +45,7 @@ export default function IncomeVsExpenses() {
         Receitas vs despesas vs poupança
       </p>
       <div style={{ width: "100%", height: 220 }}>
-        <ResponsiveContainer width="100%" height="100%">
+        <ResponsiveContainer width="100%" height="100%" minWidth={0} minHeight={undefined}>
           <BarChart data={data} barCategoryGap="25%">
             <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" vertical={false} />
             <XAxis
