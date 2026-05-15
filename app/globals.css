@@ -1,5 +1,19 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Roboto";
+  src: url("./assets/fonts/RobotoCondensed-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900; /* enables the full variable font range */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("./assets/fonts/RobotoCondensed-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -8,8 +22,7 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-robot: "Roboto", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +35,5 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-robot);
 }
