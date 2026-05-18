@@ -42,7 +42,7 @@ export default function BalanceOverview() {
   return (
     <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
       {metrics.map(({ label, value, color }) => (
-        <div key={label} className="bg-gray-100 rounded-xl px-4 py-4">
+        <div key={label} className="bg-gray-800 rounded-xl px-4 py-4">
           <p className="text-xs text-gray-500 mb-1.5">{label}</p>
           <p className={`text-xl font-medium ${color}`}>{fmt(value)}</p>
         </div>

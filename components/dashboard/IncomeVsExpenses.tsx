@@ -40,7 +40,7 @@ export default function IncomeVsExpenses() {
   }, [transactions]);
 
   return (
-    <div className="bg-white border border-gray-200 rounded-2xl p-5">
+    <div className="bg-gray-800 border border-gray-200 rounded-2xl p-5">
       <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-4">
         Receitas vs despesas vs poupança
       </p>

@@ -34,7 +34,7 @@ export default function SavingsProgress() {
   }, [transactions]);
 
   return (
-    <div className="bg-white border border-gray-200 rounded-2xl p-5">
+    <div className="bg-gray-800 border border-gray-200 rounded-2xl p-5">
       <div className="flex items-center justify-between mb-5">
         <p className="text-xs font-medium text-gray-400 uppercase tracking-wide">Poupança</p>
         <div className="flex items-center gap-3 text-xs text-gray-400">
